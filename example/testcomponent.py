@@ -1,11 +1,10 @@
-from __future__ import print_function
 from jupyter_react import Component 
 
-class Thing(Component):
-    module = 'Thing'
+class TestComponent(Component):
+    module = 'TestComponent'
 
     def __init__(self, **kwargs):
-        super(Thing, self).__init__(target_name='react.thing', **kwargs)
+        super(TestComponent, self).__init__(target_name='react.jupyter.test', **kwargs)
         self.on_msg(self._handle_msg)
 
     def _handle_msg(self, msg):
